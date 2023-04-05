@@ -1,0 +1,99 @@
+﻿
+/****************** B A C K E N D  *****************/
+/****************** Toggle Password  *****************/
+.toggle-password .box-pass .message span {
+    padding: 0 10px;
+}
+
+.toggle-password .box-pass .input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .toggle-password .box-pass .input .fa-eye, .toggle-password .box-pass .input .fa-eye-slash {
+        position: absolute;
+        margin-right: 38px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 999;
+        margin-top: 0;
+    }
+
+/****************** Toggle Password - Alter Password  *****************/
+.toggle-password .input {
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .toggle-password .input .fa-eye, .toggle-password .input .fa-eye-slash {
+        position: absolute;
+        right: 16px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 999;
+        margin-top: 27px;
+    }
+
+    .toggle-password .input .form-group {
+        width: 100%;
+    }
+
+    .toggle-password .input .form-control {
+        position: relative;
+    }
+
+/****************** Select Item - (Plan e ExtraTax)  *****************/
+.select-item {
+    display: flex;
+    align-items: center;
+}
+
+    .select-item small {
+        margin-right: 7px;
+    }
+
+    .select-item select {
+        max-width: 350px;
+    }
+
+
+
+
+/****************** F R O N T E N D  *****************/
+/****************** Toggle Password - Login User *****************/
+.toggle-password .login-frontend .input .fa-eye, .toggle-password .login-frontend .input .fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999;
+    margin-top: 0px;
+}
+
+/****************** Toggle Password - Alter Password *****************/
+.toggle-password .change-password .col {
+    margin-bottom: 5px;
+}
+
+.toggle-password .change-password .input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+    .toggle-password .change-password .input .fa {
+        position: absolute;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .toggle-password .change-password .input label > .input {
+        position: relative;
+    }
+
+    .toggle-password .change-password .input i.fa.fa-eye, .toggle-password .change-password .input i.fa.fa-eye-slash {
+        right: 45px;
+        margin-top: 0px !important;
+    }
