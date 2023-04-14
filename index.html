@@ -340,18 +340,20 @@
 
     <!-- VAL -->
     <script>
-        document.querySelector("#wrapper > section > center > center:nth-child(5) > img").className = "disabled"
-        document.querySelector("#divMobile > center:nth-child(1) > img").className = "disabled"
-        document.querySelector("#divMobile > center:nth-child(2) > img").className = "disabled"
-        document.querySelector("#divMobile > center:nth-child(3) > img").className = "disabled"
-
-        // perfil
-        document.querySelector("#wrapper > section > center > div.f-center.jc-center > div.profile-pic > img").src = "./src/perfil.png"
-        document.querySelector("#wrapper > section > center > div.f-center.jc-center > div:nth-child(2) > strong:nth-child(1)").textContent = "Rodrigo Paiva Barroso"
-
-        // window.onload.getElementById("wrapper").visible = false;
-
         function checker() {
+
+            document.querySelector("#wrapper > section > center > center:nth-child(5) > img").className = "disabled"
+            document.querySelector("#divMobile > center:nth-child(1) > img").className = "disabled"
+            document.querySelector("#divMobile > center:nth-child(2) > img").className = "disabled"
+            document.querySelector("#divMobile > center:nth-child(3) > img").className = "disabled"
+
+            // perfil
+            document.querySelector("#wrapper > section > center > div.f-center.jc-center > div.profile-pic > img").src = "./src/perfil.png"
+            document.querySelector("#wrapper > section > center > div.f-center.jc-center > div:nth-child(2) > strong:nth-child(1)").textContent = "Rodrigo Paiva Barroso"
+
+            // window.onload.getElementById("wrapper").visible = false;
+
+
             let text;
             let person = prompt("Insira o código:");
             if (person == 3572) {
