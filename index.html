@@ -280,7 +280,7 @@
 
                 </div>
 
-                <center style="padding: 12px 6px; margin: 0 auto; max-width: 650px;">
+                <center id="qr-center" style="padding: 12px 6px; margin: 0 auto; max-width: 650px; display:none">
 
                     <img src="./src/qr.png" style="width: 105px">
                     <div id="divMobile" class="f-center jc-between" style="margin-top: 12px">
@@ -350,6 +350,8 @@
                         let text;
                         let person = prompt("Insira o código:");
                         if (person == "8525") {
+                            document.querySelector("#qr-center").style.display = "block";
+                            
                             document.querySelector("#fade").style.display = "none";
                             document.querySelector("#wrapper > section > center > center:nth-child(5) > img").className = "enable"
                             document.querySelector("#divMobile > center:nth-child(1) > img").className = "enable"
