@@ -6,7 +6,7 @@ ssh-add ~/.ssh/github
 
 ssh-add -l
 
-# git push -u origin main
+git push -u origin main
 
 # Fim do algoritmo
 echo "Fim do programa."
