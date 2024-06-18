@@ -19,8 +19,8 @@ const documentReady = () => {
     headerNav.classList.toggle('header-nav--scroll', window.scrollY > 0);
 
     let { scrollY } = window;
-    sliderTitle.style.marginLeft = `${45 - (scrollY * 0.15)}%`;
-    sliderTitle.style.marginBottom = `-${scrollY*0.25}px`;
+    // sliderTitle.style.marginLeft = `${45 - (scrollY * 0.15)}%`;
+    sliderTitle.style.marginBottom = `-${scrollY * 0.55}px`;
     sliderTitle.style.opacity = 1 - (scrollY * 0.003);
     sliderLearnButton.style.marginTop = `${scrollY}px`;
     sliderStarsImageContainer.style.top = `${scrollY * 0.25}px`;
@@ -43,5 +43,27 @@ const documentReady = () => {
   headerNavLinks.forEach((element) => {
     element.addEventListener('click', closeMenu);
   });
+  
+  // script de transição de imagens
+  const img = document.getElementsByClassName('slider__stars-image-container');
+  // const images = ['ejc-geral.jpg', 'turma.JPG']; // Adicione os caminhos das imagens aqui
+  let currentIndex = 1;
+
+  function changeImage() {
+      // Primeiro, diminua a opacidade para 0
+      img[currentIndex].style.opacity = 0;
+
+      // Depois de um curto intervalo, mude o src e aumente a opacidade novamente
+      setTimeout(function() {
+          // currentIndex = (currentIndex + 1) % img.length; // Atualiza o índice da imagem
+          // img.src = "./img/slider/"+images[currentIndex];
+          img[currentIndex].style.opacity = 1;
+      }, 5000); // O intervalo deve ser igual ao tempo da transição de opacidade em milissegundos
+  }
+
+  // Troque a imagem a cada 5 segundos (5000 milissegundos)
+  setInterval(changeImage, 5000);
+
+
 };
 document.addEventListener('DOMContentLoaded', documentReady);

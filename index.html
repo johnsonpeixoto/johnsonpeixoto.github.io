@@ -3,11 +3,11 @@
 ---  Falta colocar 
 
 - A seção de patrocínio vou segmentar conforme for as categorias OK
+- Marca do evento OK
 
 - Slider com fotos do evento 
 
 - Link de inscrição 
-- Marca do evento 
 - Rodape com as redes sociais
 -->
 
@@ -24,8 +24,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <!-- Ion Icons -->
-  <link rel="stylesheet" href="css/ionicons.min.css" />
 </head>
 
 <body class="body">
@@ -33,7 +31,7 @@
     <nav class="header-nav">
       <div class="header-nav-container">
         <a href="#" class="header-nav__logo-container">
-          <img src="./img/marca-50x50.png" alt="Logo de la Web" class="header-nav__logo" />
+          <img src="./img/marca-qb.png" alt="Logo de la Web" class="header-nav__logo" />
         </a>
         <figure class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
           <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="header-nav__menu-icon">
@@ -70,12 +68,16 @@
   <main class="main">
     <section class="slider" id="slider">
       <div class="slider__container">
-        <h3 class="slider__title" style="text-align: center;">Quebrando Barreiras<br>2024</h3>
+        <!-- <h3 class="slider__title" style="text-align: center;">Quebrando Barreiras<br>2024</h3> -->
+        <img src="./img/marca.svg" alt="" class="slider__title" />
       </div>
       <!-- <a href="#" class="slider__learn-button slider__learn-button--active">¡Aprender!</a> -->
       <figure class="slider__stars-image-container">
         <img src="./img/slider/ejc-geral.jpg" alt="" class="slider__stars-image" />
       </figure>
+      <!-- <figure class="slider__stars-image-container">
+        <img src="./img/slider/turma.JPG" alt="" class="slider__stars-image" />
+      </figure> -->
       <!-- <figure class="slider__moon-image-container">
         <img src="./img/hero-moon.png" alt="Estrellas de fondo" class="slider__moon-image" />
       </figure> -->
@@ -153,9 +155,6 @@
             <!-- primeira linha -->
             <div class="sponsor__topic">
               <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/gov-ceara.webp" alt="" class="" />
-              </div>
-              <div class="sponsor__topic-icon-container">
                 <img src="./img/sponsors/arqui.webp" alt="" class="" />
               </div>
             </div>
@@ -163,24 +162,24 @@
             <div class="sponsor__topic">
               <div class="sponsor__topic-icon-container">
                 <img src="./img/sponsors/santo-inacio.png" alt="" class="" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="sponsor__section" id="apoio">
-          <h4>DOAÇÃO</h4>
-          <div class="sponsor__topics">
+          <div class="sponsor__section" id="apoio">
+            <h4>DOAÇÃO</h4>
+            <div class="sponsor__topics">
               <!-- primeira linha -->
-            <div class="sponsor__topic">
-              <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/logo-hemoce.webp" alt="" class="" />
-              </div>
-              <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/sesa.png" class="" />
+              <div class="sponsor__topic">
+                <div class="sponsor__topic-icon-container">
+                  <img src="./img/sponsors/logo-hemoce.webp" alt="" class="" />
+                </div>
+                <div class="sponsor__topic-icon-container">
+                  <img src="./img/sponsors/sesa.png" class="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   </main>
@@ -191,7 +190,8 @@
     </p>
   </footer>
 
-  <script src="./js/index.js" type="module"></script>
+  <script src="js/index.js" type="module"></script>
+  <script src="js/jquery.min.js" type="module"></script>
 </body>
 
 </html>
