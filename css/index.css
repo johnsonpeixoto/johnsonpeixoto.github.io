@@ -317,6 +317,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .location__details h4 {
@@ -329,11 +330,10 @@
 
 .location__details p{
   text-align: center;
-  margin: 0;
-  color: rgba(0, 0, 0, 0, 0.1);
+  margin: auto;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
-  max-width: 70%;
+  margin: 1vw 5vw;
 }
 
 
@@ -365,13 +365,13 @@
 .sponsor__topics {
   display: grid;
   align-items: center;
-  vertical-align: auto;
   gap: 2rem;
 }
 
 .sponsor__topic {
   display: flex;
   gap: 1.5rem;
+  margin: auto;
 }
 
 .sponsor__topic-icon-container {
@@ -411,5 +411,9 @@
   .sponsor__topics {
     display: flex;
     flex-direction: row;
+  }
+
+  .location__details p{
+    max-width: 50%;
   }
 }
