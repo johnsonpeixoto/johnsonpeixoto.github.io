@@ -252,7 +252,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  max-width: var(--max-width-container);
+  /* max-width: var(--max-width-container); */
   margin: auto;
   padding: var(--padding-container);
   overflow: hidden;
@@ -413,7 +413,7 @@
     flex-direction: row;
   }
 
-  .location__details p{
-    max-width: 50%;
+  .location__details {
+    width: 75vw;
   }
 }
