@@ -7,7 +7,7 @@
   --button-color: #61dafb;
   --button-color-active: #fff;
   --button-text-color: #000;
-  --padding-section: 4em 0;
+  --padding-section: 2em 0;
   --padding-container: 0 2em;
   --max-width-container: 1024px;
   --primary-highlight: #61dafb;
@@ -30,6 +30,7 @@
   left: 0;
   width: 100%;
   transition: var(--all-transitions);
+
   img {
     height: 9vh;
   }
@@ -47,6 +48,7 @@
 
 .header-nav--scroll {
   padding: 0.5rem 0;
+
   img {
     height: 7vh !important;
   }
@@ -180,7 +182,7 @@
     h4 {
       margin: 0;
       text-shadow: 2px 0 #333, -2px 0 #333, 0 2px #333, 0 -2px #333,
-                   1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
+        1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
     }
 
     a {
@@ -195,6 +197,10 @@
       border-radius: var(--border-radius);
     }
 
+    mark:hover {
+      box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.7);
+      font-size: 1.03rem;
+    }
   }
 }
 
@@ -273,6 +279,7 @@
 
 .schedule {
   display: flex;
+  padding-top: 10vh;
   padding-top: var(--padding-section);
 }
 
@@ -348,23 +355,16 @@
   display: flex;
   flex-direction: column;
   width: 75vw;
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius) var(--border-radius) 0 0; 
-  }
 }
 
 .location__details h4 {
   text-align: center;
-  margin: 0;
   color: var(--secondary-theme-color);
   font-weight: 500;
   font-size: 1.25rem;
 }
 
-.location__details p{
+.location__details p {
   text-align: center;
   margin: auto;
   font-size: 0.9rem;
@@ -372,6 +372,52 @@
   margin: 1vw 5vw;
 }
 
+.location__map {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
+
+.location__map h4 {
+  text-align: center;
+  margin: 0px;
+  color: var(--secondary-theme-color);
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+.location__map p {
+  text-align: center;
+  margin: auto;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin: 1vw 5vw;
+}
+
+.location__map img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.location__map figure {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.location__map img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .sponsor {
   display: flex;
