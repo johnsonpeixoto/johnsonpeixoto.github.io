@@ -449,7 +449,7 @@
 .sponsor__topics {
   display: grid;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .sponsor__topic {
