@@ -31,7 +31,7 @@
     <nav class="header-nav">
       <div class="header-nav-container">
         <a href="#" class="header-nav__logo-container">
-          <img src="./img/marca-qb.png" alt="Logo de la Web" class="header-nav__logo" />
+          <img src="./img/marca-PeB.png" alt="Logo" class="header-nav__logo" />
         </a>
         <figure class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
           <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="header-nav__menu-icon">
@@ -43,10 +43,11 @@
             <a href="#" class="header-nav__menu-link">Inicio</a>
           </li>
           <li class="header-nav__menu-link-item">
-            <a href="#schedule" class="header-nav__menu-link">Programação</a>
+            <a href="#schedule" class="header-nav__menu-link">Sobre</a>
           </li>
           <li class="header-nav__menu-link-item">
-            <a href="#sponsor" class="header-nav__menu-link">Patrocinadores</a>
+            <a href="https://www.sympla.com.br/quebrando-barreiras-2024__2510995" target="_blank"
+              class="header-nav__menu-link">Inscrições</a>
           </li>
           <li class="header-nav__menu-link-item header-nav__menu-close-icon-container"
             id="headerNavMenuCloseIconContainer">
@@ -67,14 +68,20 @@
 
   <main class="main">
     <section class="slider" id="slider">
-      <div class="slider__container">
-        <!-- <h3 class="slider__title" style="text-align: center;">Quebrando Barreiras<br>2024</h3> -->
-        <img src="./img/marca.svg" alt="" class="slider__title" />
-      </div>
-      <!-- <a href="#" class="slider__learn-button slider__learn-button--active">¡Aprender!</a> -->
       <figure class="slider__stars-image-container">
         <img src="./img/slider/ejc-geral.jpg" alt="" class="slider__stars-image" />
       </figure>
+      <div class="slider__container">
+        <img src="./img/marca.svg" alt="" class="slider__title" />
+        <span>
+          <!-- <h4 class="slider__title" style="text-align: center;">
+            Inscrições Abertas! <mark></mark>
+          </h4> -->
+          <a href="https://www.sympla.com.br/quebrando-barreiras-2024__2510995" target="_blank"
+            class="slider__button"><mark>Inscreva-se no #QB2024</mark>
+          </a>
+        </span>
+      </div>
       <!-- <figure class="slider__stars-image-container">
         <img src="./img/slider/turma.JPG" alt="" class="slider__stars-image" />
       </figure> -->
@@ -89,9 +96,14 @@
       </figure> -->
     </section>
 
+    <section>
+      <div class="">
+        <img src="./img/fee8a333.png" alt="" class="schedule__image" />
+      </div>
+    </section>
+
     <section class="schedule" id="schedule">
       <div class="schedule__container">
-        <img src="./img/fee8a3.png" alt="" class="schedule__image" />
         <div class="schedule__content">
           <div class="location__details">
             <h4 style="line-height: 5;">Sobre o Evento</h4>
@@ -130,25 +142,39 @@
             </div>
           </div>
           <!-- <h2 class="schedule__topic-title">Programação</h2> -->
-          <div class="location__details">
-            <h4>Como chegar?</h4>
-            <p>(toque no mapa abaixo)</p>
-            <a href="https://maps.app.goo.gl/4WLLDSFgNXqZNDac9" target="_blank" class="location__details-button">
-              <img src="./img/mapa.png" alt="Google Maps" class="location__details-button-icon" />
-            </a>
-          </div>
         </div>
+      </div>
+    </section>
+    <section>
+      <div class="location__details">
+        <h4>Como chegar?</h4>
+        <p>(toque no mapa abaixo)</p>
+        <a href="https://maps.app.goo.gl/4WLLDSFgNXqZNDac9" target="_blank" class="location__details-button">
+          <img src="./img/mapa.png" alt="Google Maps" class="location__details-button-icon" />
+        </a>
       </div>
     </section>
 
     <section class="sponsor" id="sponsor">
       <div class="sponsor__container">
         <div class="sponsor__section" id="patro">
+          <h4>PATROCÍNIO</h4>
+          <div class="sponsor__topics">
+            <div class="sponsor__topic">
+              <div class="sponsor__topic-icon-container">
+                <a href="https://solnor.com.br/" target="_blank">
+                  <img src="./img/sponsors/solnor.png" alt="" class="" />
+                </a>
+              </div>
+            </div>
+          </div>
           <h4>PARCEIROS</h4>
           <div class="sponsor__topics">
             <div class="sponsor__topic">
               <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/acheticket.png" alt="" class="" />
+                <a href="https://www.achetickets.com.br/" target="_blank">
+                  <img src="./img/sponsors/acheticket.png" alt="" class="" />
+                </a>
               </div>
             </div>
           </div>
@@ -157,18 +183,25 @@
             <!-- primeira linha -->
             <div class="sponsor__topic">
               <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/santo-inacio.png" alt="" class="" />
+                <a href="https://santoinacio.com.br/" target="_blank">
+                  <img src="./img/sponsors/santo-inacio.png" alt="" class="" />
+                </a>
+              </div>
+              <div class="sponsor__topic-icon-container">
+                <img src="./img/sponsors/jesuitas.png" alt="" class="" />
               </div>
             </div>
             <!-- segunda linha -->
             <div class="sponsor__topic">
               <div class="sponsor__topic-icon-container">
-                <img src="./img/sponsors/arqui.webp" alt="" class="" />
+                <a href="https://www.arquidiocesedefortaleza.org.br/" target="_blank">
+                  <img src="./img/sponsors/arqui.webp" alt="" class="" />
+                </a>
               </div>
             </div>
           </div>
           <div class="sponsor__section" id="apoio">
-            <h4>DOAÇÃO</h4>
+            <h4>CAMPANHA DE DOAÇÃO</h4>
             <div class="sponsor__topics">
               <!-- primeira linha -->
               <div class="sponsor__topic">
@@ -177,6 +210,17 @@
                 </div>
                 <div class="sponsor__topic-icon-container">
                   <img src="./img/sponsors/sesa.png" class="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sponsor__section" id="apoio">
+            <h4>REALIZAÇÃO</h4>
+            <div class="sponsor__topics">
+              <!-- primeira linha -->
+              <div class="sponsor__topic">
+                <div class="sponsor__topic-icon-container">
+                  <img src="./img/sponsors/logo-hemoce.webp" alt="" class="" />
                 </div>
               </div>
             </div>
