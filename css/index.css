@@ -495,7 +495,7 @@
   .schedule__topics,
   .sponsor__topics {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .location__details {
